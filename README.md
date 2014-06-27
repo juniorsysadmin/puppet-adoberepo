@@ -8,7 +8,7 @@
 ##Overview
 
 This module installs and enables the Adobe YUM repository.
-When run on a non-RedHat osfamily it exits. 
+When run on a non-RedHat osfamily it exits with no action.
 
 [![Build
 Status](https://secure.travis-ci.org/juniorsysadmin/puppet-adoberepo.png)](http://travis-ci.org/juniorsysadmin/puppet-adoberepo)
@@ -17,6 +17,13 @@ Status](https://secure.travis-ci.org/juniorsysadmin/puppet-adoberepo.png)](http:
 
 ```puppet
 include  '::adoberepo'
+
+or to use a local mirror:
+
+```puppet
+class { '::adoberepo':
+  adoberepo_baseurl => 'http://localmirror.server.domain',
+}
 ```
 
 ###Parameters
@@ -34,6 +41,10 @@ Defaults to 1.
 ####`adoberepo_gpgcheck`
 
 Defaults to 1
+
+####`adoberepo_name`
+
+Defaults to adobe-linux-${::architecture}
 
 ####`adoberepo_proxy`
 

@@ -1,6 +1,8 @@
-*.swp
-pkg/
+.bundle
+*.sw*
+.vagrant
+coverage/
 Gemfile.lock
-spec/fixtures/manifests
-.project
-metadata.json
+pkg/
+spec/fixtures
+vendor
