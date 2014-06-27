@@ -17,6 +17,7 @@ Status](https://secure.travis-ci.org/juniorsysadmin/puppet-adoberepo.png)](http:
 
 ```puppet
 include  '::adoberepo'
+```
 
 or to use a local mirror:
 
