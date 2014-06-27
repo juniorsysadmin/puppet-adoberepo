@@ -7,5 +7,5 @@ description 	'This module installs the Adobe YUM repository which hosts up to da
 license     	'Apache License, Version 2.0'
 project_page 'https://github.com/juniorsysadmin/puppet-adoberepo'
 
-dependency  'treydock/gpg_key'
+dependency  'treydock/gpg_key', '>= 0.0.3'
 project_page 'https://github.com/juniorsysadmin/puppet-adoberepo'

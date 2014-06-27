@@ -9,6 +9,6 @@
   "issues_url": "https://github.com/juniorsysadmin/puppet-adoberepo/issues",
   "description": "This module installs the Adobe YUM repository which hosts up to date versions of the Adobe Flash plugin",
   "dependencies": [
-    {"name":"treydock/gpg_key"}
+    {"name":"treydock/gpg_key","version_requirement":">= 0.0.3"}
   ]
 }
