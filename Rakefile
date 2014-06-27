@@ -14,7 +14,6 @@ PuppetLint.configuration.send('disable_class_inherits_from_params_class')
 PuppetLint.configuration.ignore_paths = ["pkg/**/*", "vendor/**/*", "spec/**/*",]
 
 PuppetSyntax.exclude_paths = ["pkg/**/*", "vendor/**/*", "spec/**/*",]
-PuppetSyntax.future_parser = true
 
 desc "Run acceptance tests"
 RSpec::Core::RakeTask.new(:acceptance) do |t|
