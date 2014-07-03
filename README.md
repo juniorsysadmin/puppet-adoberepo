@@ -8,7 +8,7 @@
 ##Overview
 
 This module installs and enables the Adobe YUM repository.
-When run on a non-RedHat osfamily it exits with no action.
+When run on a non-RedHat osfamily it exits with no action performed.
 
 [![Build
 Status](https://secure.travis-ci.org/juniorsysadmin/puppet-adoberepo.png)](http://travis-ci.org/juniorsysadmin/puppet-adoberepo)
