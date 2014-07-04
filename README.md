@@ -23,7 +23,7 @@ or to use a local mirror:
 
 ```puppet
 class { '::adoberepo':
-  adoberepo_baseurl => 'http://localmirror.server.domain',
+  adoberepo_baseurl => 'http://localmirror.server.domain/',
 }
 ```
 
