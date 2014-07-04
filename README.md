@@ -35,6 +35,10 @@ The following parameters are available in the adoberepo module:
 
 Defaults to http://linuxdownload.adobe.com/linux/${::architecture}/.
 
+####`adoberepo_descr`
+
+Defaults to 'Adobe YUM repository'.
+
 ####`adoberepo_enabled`
 
 Defaults to 1.
