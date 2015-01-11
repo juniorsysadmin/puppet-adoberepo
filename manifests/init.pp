@@ -45,12 +45,12 @@ class adoberepo (
   if ($::osfamily == 'RedHat') {
 
     yumrepo { $adoberepo_name:
-      baseurl        => $adoberepo_baseurl,
-      descr          => $adoberepo_descr,
-      enabled        => $adoberepo_enabled,
-      gpgcheck       => $adoberepo_gpgcheck,
-      gpgkey         => 'file:///etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux',
-      proxy          => $adoberepo_proxy,
+      baseurl  => $adoberepo_baseurl,
+      descr    => $adoberepo_descr,
+      enabled  => $adoberepo_enabled,
+      gpgcheck => $adoberepo_gpgcheck,
+      gpgkey   => 'file:///etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux',
+      proxy    => $adoberepo_proxy,
     }
 
     file { '/etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux':
@@ -62,8 +62,8 @@ class adoberepo (
     }
 
     gpg_key{ $adoberepo_name:
-      path    => '/etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux',
-      before  => Yumrepo[$adoberepo_name]
+      path   => '/etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux',
+      before => Yumrepo[$adoberepo_name]
     }
 
   }

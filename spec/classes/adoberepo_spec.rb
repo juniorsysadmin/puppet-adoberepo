@@ -1,12 +1,10 @@
 require 'spec_helper'
 
 describe 'adoberepo', :type => :class do
-  it { should compile.with_all_deps }
-  it { should create_class('adoberepo') }
-  it { should contain_class('adoberepo::params') }
 
   context 'RedHat osfamily with no parameters, 64 bit' do
     let(:facts) {{ :osfamily => 'RedHat', :operatingsystem => 'Fedora', :architecture => 'x86_64', }}
+    it { should compile.with_all_deps }
     it { should contain_yumrepo('adobe-linux-x86_64').with_baseurl('http://linuxdownload.adobe.com/linux/x86_64/') }
     it { should contain_yumrepo('adobe-linux-x86_64').with_descr('Adobe YUM repository') }
     it { should contain_yumrepo('adobe-linux-x86_64').with_enabled('1') }
@@ -65,7 +63,7 @@ describe 'adoberepo', :type => :class do
   end
 
   context 'Non-RedHat osfamily' do
-    let(:facts) {{ :osfamily => 'Debian', }}
+    let(:facts) {{ :osfamily => 'Debian', :operatingsystem => 'Ubuntu', :architecture => 'x86_64', }}
     it { should compile.with_all_deps }
   end
 end
