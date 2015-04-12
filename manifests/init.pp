@@ -1,38 +1,3 @@
-# == Class: adoberepo
-#
-# This module installs and enables the Adobe YUM repository. When run on a
-# non-RedHat osfamily it exits with no action performed.
-#
-# === Parameters
-#
-# [*adoberepo_baseurl*]
-# Defaults to http://linuxdownload.adobe.com/linux/${::architecture}/
-#
-# [*adoberepo_descr*]
-# Defaults to 'Adobe YUM repository'
-#
-# [*adoberepo_enabled*]
-# Defaults to 1
-#
-# [*adoberepo_gpgcheck*]
-# Defaults to 1
-#
-# [*adoberepo_name*]
-# Defaults to adobe-linux-${::architecture}
-#
-# [*adoberepo_proxy*]
-# Defaults to absent. (Uses the yum.conf value if it exists)
-#
-# === Usage
-#
-# include '::adoberepo'
-#
-# or to use a local mirror:
-#
-#  class { 'adoberepo':
-#    adoberepo_baseurl => 'http://localmirror.server.domain',
-#  }
-#
 class adoberepo (
   $adoberepo_baseurl  = $adoberepo::params::adoberepo_baseurl,
   $adoberepo_descr    = $adoberepo::params::adoberepo_descr,

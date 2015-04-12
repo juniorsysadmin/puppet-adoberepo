@@ -1,4 +1,3 @@
-# Optional parameters in setting up the Adobe YUM repository
 class adoberepo::params {
   $adoberepo_baseurl  = "http://linuxdownload.adobe.com/linux/${::architecture}/"
   $adoberepo_descr    = 'Adobe YUM repository'
