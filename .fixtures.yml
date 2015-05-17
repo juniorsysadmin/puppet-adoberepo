@@ -1,3 +1,5 @@
 fixtures:
+  repositories:
+    gpg_key: "git://github.com/treydock/puppet-gpg_key"
   symlinks:
     adoberepo: "#{source_dir}"

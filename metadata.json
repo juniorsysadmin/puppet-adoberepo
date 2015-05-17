@@ -1,6 +1,6 @@
 {
   "name": "juniorsysadmin-adoberepo",
-  "version": "0.1.0",
+  "version": "0.0.4",
   "author": "Ben Spiccia",
   "summary": "Module for installing the Adobe YUM repository",
   "license": "Apache-2.0",
@@ -17,15 +17,20 @@
       ]
     }
   ],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "name":"treydock/gpg_key",
+      "version_requirement":">= 0.0.3 < 2.0.0"
+    }
+  ],
   "requirements": [
     {
       "name": "pe",
-      "version_requirement": ">= 3.7.0"
+      "version_requirement": "3.x"
     },
     {
       "name": "puppet",
-      "version_requirement": ">= 3.5.0"
+      "version_requirement": ">=2.7.20 < 4.0.0"
     }
   ]
 }

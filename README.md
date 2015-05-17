@@ -45,10 +45,6 @@ Defaults to 'Adobe YUM repository'.
 
 Defaults to 1.
 
-#### `adoberepo_ensure`
-
-Defaults to present.
-
 #### `adoberepo_gpgcheck`
 
 Defaults to 1
@@ -61,16 +57,14 @@ Defaults to adobe-linux-${::architecture}
 
 Defaults to absent.  (Uses the yum.conf value if it exists)
 
-#### `adoberepo_repo_gpgcheck`
-
-Defaults to 1
-
 ## Limitations
 
 This module has received limited testing on:
 
 * CentOS/RHEL 6/7
 * Fedora 21
+
+against Puppet 2.7.x and 3.x
 
 ## Development
 
