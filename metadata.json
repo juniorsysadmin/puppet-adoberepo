@@ -17,12 +17,7 @@
       ]
     }
   ],
-  "dependencies": [
-    {
-      "name":"treydock/gpg_key",
-      "version_requirement":">= 0.0.3 < 2.0.0"
-    }
-  ],
+  "dependencies": [],
   "requirements": [
     {
       "name": "pe",
@@ -30,7 +25,7 @@
     },
     {
       "name": "puppet",
-      "version_requirement": ">=2.7.20 < 4.0.0"
+      "version_requirement": ">= 3.5.0"
     }
   ]
 }
