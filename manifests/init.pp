@@ -19,7 +19,7 @@ class adoberepo (
     }
 
     file { '/etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux':
-      ensure => present,
+      ensure => file,
       owner  => 'root',
       group  => 'root',
       mode   => '0644',
