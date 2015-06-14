@@ -28,7 +28,7 @@ class adoberepo (
 
     gpg_key{ $adoberepo_name:
       path   => '/etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux',
-      before => Yumrepo[$adoberepo_name]
+      before => Yumrepo[$adoberepo_name],
     }
 
   }

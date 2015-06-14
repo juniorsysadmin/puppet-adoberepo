@@ -11,11 +11,20 @@ def location_for(place, fake_version = nil)
 end
 
 group :development, :unit_tests do
-  gem 'rspec-core', '3.1.7',     :require => false
-  gem 'puppetlabs_spec_helper',  :require => false
-  gem 'simplecov',               :require => false
-  gem 'puppet_facts',            :require => false
-  gem 'json',                    :require => false
+  gem 'rspec-core', '3.1.7',                   :require => false
+  gem 'puppetlabs_spec_helper',                :require => false
+  gem 'simplecov',                             :require => false
+  gem 'puppet_facts',                          :require => false
+  gem 'json',                                  :require => false
+  gem 'puppet-lint',                           :require => false
+  gem 'puppet-lint-unquoted_string-check',     :require => false
+  gem 'puppet-lint-variable_contains_upcase',  :require => false
+  gem 'puppet-lint-absolute_classname-check',  :require => false
+  gem 'puppet-lint-undef_in_function-check',   :require => false
+  gem 'puppet-lint-leading_zero-check',        :require => false
+  gem 'puppet-lint-trailing_comma-check',      :require => false
+  gem 'puppet-lint-file_ensure-check',         :require => false
+  gem 'puppet-lint-version_comparison-check',  :require => false
 end
 
 group :system_tests do
