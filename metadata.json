@@ -10,11 +10,7 @@
   "tags": ["adobe", "flash"],
   "operatingsystem_support": [
     {
-      "operatingsystem": "Fedora",
-      "operatingsystemrelease": [
-        "20",
-        "21"
-      ]
+      "operatingsystem": "Fedora"
     }
   ],
   "dependencies": [
