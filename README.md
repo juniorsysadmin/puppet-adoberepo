@@ -64,7 +64,7 @@ This module has received limited testing on:
 * CentOS/RHEL 6/7
 * Fedora 21
 
-against Puppet 2.7.x and 3.x
+against Puppet 3.8.7 and Puppet 4.x
 
 ## Development
 
