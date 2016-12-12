@@ -1,10 +1,10 @@
 {
   "name": "juniorsysadmin-adoberepo",
   "version": "0.0.5",
-  "author": "Ben Spiccia",
+  "author": "juniorsysadmin",
   "summary": "Module for installing the Adobe YUM repository",
   "license": "Apache-2.0",
-  "source": "git://github.com/juniorsysadmin/puppet-adoberepo.git",
+  "source": "https://github.com/juniorsysadmin/puppet-adoberepo.git",
   "project_page": "https://github.com/juniorsysadmin/puppet-adoberepo",
   "issues_url": "https://github.com/juniorsysadmin/puppet-adoberepo/issues",
   "tags": ["adobe", "flash"],
@@ -16,17 +16,13 @@
   "dependencies": [
     {
       "name":"treydock/gpg_key",
-      "version_requirement":">= 0.0.3 < 2.0.0"
+      "version_requirement":">= 0.0.4 < 2.0.0"
     }
   ],
   "requirements": [
     {
-      "name": "pe",
-      "version_requirement": "3.x"
-    },
-    {
       "name": "puppet",
-      "version_requirement": ">=2.7.20 < 4.0.0"
+      "version_requirement": ">=3.8.7 < 5.0.0"
     }
   ]
 }

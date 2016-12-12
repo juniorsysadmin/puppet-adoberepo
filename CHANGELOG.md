@@ -1,3 +1,10 @@
+## Future
+
+### Backwards-incompatible changes
+
+- Puppet 3.8.7 or greater is now required
+- treydock-gpg_key 0.0.4 or greater is now required
+
 ## 2015-06-14 Release 0.0.5
 
 ### Backwards-incompatible changes:
