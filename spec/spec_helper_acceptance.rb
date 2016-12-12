@@ -1,9 +1,9 @@
 require 'beaker-rspec'
 require 'pry'
 
-UNSUPPORTED_PLATFORMS = [ 'Windows', 'Solaris', 'AIX' ]
+UNSUPPORTED_PLATFORMS = %w(Windows Solaris AIX).freeze
 
-unless ENV['RS_PROVISION'] == 'no' or ENV['BEAKER_provision'] == 'no'
+unless (ENV['RS_PROVISION'] == 'no') || (ENV['BEAKER_provision'] == 'no')
   if hosts.first.is_pe?
     install_pe
   else
@@ -24,10 +24,10 @@ RSpec.configure do |c|
   # Configure all nodes in nodeset
   c.before :suite do
     # Install module and dependencies
-    puppet_module_install(:source => proj_root, :module_name => 'adoberepo')
+    puppet_module_install(source: proj_root, module_name: 'adoberepo')
     hosts.each do |host|
       on host, "/bin/touch #{default['puppetpath']}/hiera.yaml"
-      on host, puppet('module','install','treydock-gpg_key'), { :acceptable_exit_codes => [0,1] }
+      on host, puppet('module', 'install', 'treydock-gpg_key'), acceptable_exit_codes: [0, 1]
     end
   end
 end
